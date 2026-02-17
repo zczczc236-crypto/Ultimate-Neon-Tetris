@@ -78,3 +78,16 @@ body {
 
 .ctrl-btn:active { background: var(--neon-blue); }
 .wide { width: 200px; border-radius: 30px; }
+
+/* 버튼 연타 시 텍스트 선택 및 하이라이트 방지 */
+.ctrl-btn {
+    -webkit-tap-highlight-color: transparent; /* 터치 시 파란 박스 제거 */
+    user-select: none; /* 텍스트 선택 방지 */
+    touch-action: manipulation; /* 브라우저 기본 제스처 제한 */
+}
+
+/* 전체 화면 스크롤 방지 (게임에 집중) */
+body {
+    touch-action: none; 
+    overscroll-behavior: none;
+}
