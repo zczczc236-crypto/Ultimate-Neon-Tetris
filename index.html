@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ultimate Neon Tetris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <div class="game-info">
+            <h1>TETRIS</h1>
+            <div class="stat-group">
+                <div class="stat-label">SCORE</div>
+                <div id="score" class="stat-value">0</div>
+            </div>
+            <div class="stat-group">
+                <div class="stat-label">LEVEL</div>
+                <div id="level" class="stat-value">1</div>
+            </div>
+            <div class="next-container">
+                <canvas id="next" width="100" height="100"></canvas>
+            </div>
+            <button id="start-btn">START</button>
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="tetris" width="240" height="400"></canvas>
+        </div>
+
+        <div class="mobile-controls">
+            <div class="row">
+                <button class="ctrl-btn" id="btn-rotate">↻</button>
+            </div>
+            <div class="row">
+                <button class="ctrl-btn" id="btn-left">←</button>
+                <button class="ctrl-btn" id="btn-down">↓</button>
+                <button class="ctrl-btn" id="btn-right">→</button>
+            </div>
+            <div class="row">
+                <button class="ctrl-btn wide" id="btn-drop">HARD DROP</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
